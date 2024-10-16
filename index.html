@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kata Romantis untuk Pacar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0e4d7;
+        }
+        #kata-romantis {
+            font-size: 24px;
+            color: #e60073;
+            cursor: pointer;
+            padding: 20px;
+            border: 2px solid #e60073;
+            border-radius: 10px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        #kata-romantis:hover {
+            background-color: #e10774;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div id="kata-romantis" onclick="gantiKata()">Klik untuk kata romantis</div>
+
+    <script>
+        const kataRomantis = [
+            "Aku mencintaimu lebih dari yang bisa kuungkapkan.",
+            "Kamu adalah bintang terang di langitku.",
+            "Kehadiranmu membuat hariku lebih indah.",
+            "Selalu bersamamu adalah hal yang paling aku inginkan.",
+            "Kamu adalah alasanku tersenyum setiap hari.",
+            "Cintamu adalah anugerah terbesar dalam hidupku.",
+            "Kamu mengisi hatiku dengan cinta dan kebahagiaan.",
+            "Denganmu, hidup terasa lebih berwarna.",
+            "Cintaku padamu tak akan pernah pudar.",
+            "Aku bersyukur setiap hari karena memiliki kamu."
+            
+        ];
+
+        function gantiKata() {
+            const index = Math.floor(Math.random() * kataRomantis.length);
+            document.getElementById("kata-romantis").innerText = kataRomantis[index];
+        }
+    </script>
+</body>
+</html>
